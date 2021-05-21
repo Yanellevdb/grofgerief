@@ -1,0 +1,30 @@
+<svg id="Component_12_12" data-name="Component 12 – 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="44" viewBox="0 0 86 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Menu" transform="translate(0 2)">
+    <rect id="Rectangle_98" data-name="Rectangle 98" width="86" height="42" rx="21" fill="#888c69"/>
+    <text id="Inloggen" transform="translate(28 21)" fill="#f5f5ef" font-size="10" font-family="FuturaPT-Heavy, Futura PT" font-weight="800"><tspan x="-20.165" y="0">Inloggen</tspan></text>
+    <text id="Aanmelden" transform="translate(34 29)" fill="#f5f5ef" font-size="10" font-family="FuturaPT-Heavy, Futura PT" font-weight="800"><tspan x="-26.06" y="0">Aanmelden</tspan></text>
+    <line id="Line_9" data-name="Line 9" x2="77.085" transform="translate(4.457 21.988)" fill="none" stroke="#3c5943" stroke-width="1"/>
+  </g>
+  <g id="button" transform="translate(-1588 -90)">
+    <rect id="Rectangle_87" data-name="Rectangle 87" width="86" height="43" rx="21.5" transform="translate(1588 91)" fill="#888c69"/>
+    <g id="Default" transform="translate(1626 94.577)">
+      <circle id="Circle" cx="17.5" cy="17.5" r="17.5" transform="translate(0 0.423)" fill="#d97652"/>
+      <g id="_12px_12px_footprint" data-name="12px / 12px footprint" transform="translate(8.856 8.856)">
+        <rect id="Footprint" width="18" height="18" transform="translate(0.145 -0.433)" fill="rgba(0,0,0,0)"/>
+        <text id="Icon" transform="translate(0.145 17.567)" fill="#fff" font-size="18" font-family="SegoeMDL2Assets, Segoe MDL2 Assets"><tspan x="0" y="0"></tspan></text>
+      </g>
+    </g>
+    <g id="_Elements_Header_Hamburger_-_Expanded" data-name="_Elements / Header / Hamburger - Expanded" transform="translate(1601 90)" clip-path="url(#clip-path)">
+      <path id="Footprint-2" data-name="Footprint" d="M0,0H16V40H0Z" fill="rgba(0,0,0,0)"/>
+      <g id="Hamburger_16px_40px_footprint" data-name="Hamburger / 16px / 40px footprint" transform="translate(0 12)">
+        <rect id="Footprint-3" data-name="Footprint" width="16" height="16" fill="rgba(0,0,0,0)"/>
+        <text id="Icon-2" data-name="Icon" transform="translate(0 16)" font-size="16" font-family="SegoeMDL2Assets, Segoe MDL2 Assets"><tspan x="0" y="0"></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
