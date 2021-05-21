@@ -11,7 +11,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: space-around;
+    align-content: space-between;
 }
 
 nav a {
@@ -66,4 +66,31 @@ input[type=submit]{
     width: 150px;
     align-self: center;
     margin-top: 25px;
+}
+
+.account-header {
+    background-color: #F5F5EF;
+    margin: 200px;
+    color: #3C5943;
+    padding: 70px;
+}
+
+.account-header__title {
+    color: #D97652;
+    font-weight: 800px;
+}
+
+.btn--green {
+    background-color:#3C5943;
+    color: #F5F5EF;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.btn--lightgreen {
+    background-color:#888C69;
+    color: #F5F5EF;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 35px;
 }
