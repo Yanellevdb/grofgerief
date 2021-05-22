@@ -12,7 +12,7 @@ var app = express();
 
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://localhost:27017/grofgerief', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:3000/grofgerief', {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 // view engine setup
