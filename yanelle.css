@@ -105,3 +105,10 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+.alert {
+}
+
+.hidden {
+    visibility: hidden;
+}

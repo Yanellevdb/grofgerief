@@ -21,18 +21,19 @@
 
     <div class="signup__form">
         <h2>Do you want to join our community?</h2>
+            <p class="alert hidden">Oops... Something went wrong!</p>
             <form action="index.html">
                 <label for="email">Email address</label> 
+                <input type="text" id="email">
+                <label for="voornaam" id="voornaam">Voornaam</label>
                 <input type="text">
-                <label for="voornaam">Voornaam</label>
-                <input type="text">
-                <label for="voornaam">Naam</label>
+                <label for="achternaam" id="achternaam">Naam</label>
                 <input type="text">
                 <label for="password">Password</label>
-                <input type="password">
+                <input type="password" id="password">
                 <label for="password">Confirm password</label>
                 <input type="password">
-                <input type="submit" value="Create account" class="btn">
+                <input type="submit" value="Create account" class="btn--signup">
             </form>
         <a href="login.html">Already have an account? Login! </a>
     </div>
@@ -47,6 +48,6 @@
         <a class="social-icon" href=""><img src="/images/instagram.svg" alt="Instagram" width="20px"></a>
         <div class="footer-logo"> <img src="/images/Logo grofgerief official.svg" alt="" width="150px"></div>
     </footer>
-    <script src="public/javascript/gerief.js"></script>
+    <script src="/public/javascript/gerief.js"></script>
 </body>
 </html>
