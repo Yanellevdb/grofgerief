@@ -5,6 +5,7 @@
 body {
     font-family: futura-pt;
     background-image: linear-gradient(#3C5943, #888C69);
+
 }
 
 nav {
@@ -44,41 +45,7 @@ h3 {
     background-color: #D97652;
     color: #F5F5EF;
     padding: 15px;
-}
-
-.header {
-    margin: 240px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 300px;
-    gap: 5px;
-    color:#F5F5EF;
-}
-
-input {
-    padding: 8px;
-    margin: 5px 0px;
-}
-
-input[type=submit]{
-    width: 150px;
-    align-self: center;
-    margin-top: 25px;
-}
-
-.account-header {
-    background-color: #F5F5EF;
-    margin: 200px;
-    color: #3C5943;
-    padding: 70px;
-}
-
-.account-header__title {
-    color: #D97652;
-    font-weight: 800px;
+    text-decoration: none;
 }
 
 .btn--green {
@@ -96,6 +63,118 @@ input[type=submit]{
     border-radius: 35px;
 }
 
+.header {
+    padding: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#3C5943, #888C69);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 300px;
+    gap: 5px;
+    color:#F5F5EF;
+}
+
+footer {
+    color: #F5F5EF;
+    background-color: #3C5943;
+    padding: 20px;
+}
+
+.footer--info {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+}
+
+.footer--logo {
+    background-color: #F5F5EF;
+    align-self: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0px;
+}
+
+input[type=submit]{
+    width: 150px;
+    align-self: center;
+    margin-top: 25px;
+}
+
+/*account*/
+
+.account-header {
+    background-color: #F5F5EF;
+    margin: 200px;
+    color: #3C5943;
+    padding: 70px;
+}
+
+.account-header__title {
+    color: #D97652;
+    font-weight: 800px;
+}
+
+
+
+/*about*/
+
+.quote {
+    background-image: url("./images/groepsfoto.svg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 450px;
+    padding-top: 150px;
+}
+
+
+.summary--about {
+    background-image: url(./images/plant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F5F5EF;
+    padding: 60px 50px 100px 50px;
+    text-align: center;
+}
+
+.facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.fact {
+    background-color: #D97652;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: -45px 25px 0 25px;
+    background-color: #D97652;
+    color: #F5F5EF;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 35px;
+}
+
 .winkelwagen-bevestiging {
     display: none;
 }
@@ -107,8 +186,49 @@ footer {
 }
 
 .alert {
+    color: red;
 }
 
 .hidden {
     visibility: hidden;
 }
+<<<<<<< HEAD
+=======
+
+.history__item {
+    padding: 10px;
+}
+
+.waarden {
+    background-color: #F5F5EF;
+    padding: 50px 40px;
+}
+
+.waarden h2 {
+    color: #3C5943;
+}
+
+.waarden h3 {
+    color:#3C5943;
+}
+
+.waarden__inleiding {
+    padding: 0px 60px;
+    text-align: center;
+}
+
+.waarden__titels {
+    display: flex;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40% 40%;
+}
+
+.waarden__titel {
+    display: flex;
+    flex-direction: column;
+}
+
+.jointeam {
+    padding: 80px 50px;
+}
+>>>>>>> 9cf795272870702fbc6b39b6fe1b5b55e60e5750
