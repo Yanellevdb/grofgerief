@@ -12,7 +12,9 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: space-between;
+    justify-content: space-around;
+    font-size: 1.4em;
+    padding: 20px;
 }
 
 nav a {
@@ -33,12 +35,13 @@ h2 {
     text-align: center;
     color: #F5F5EF;
     font-size: 35px;
+    margin-top: -20px;
 }
 
 h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #F5F5EF;
+    padding-top: 20px;
 }
 
 .btn {
@@ -192,8 +195,6 @@ footer {
 .hidden {
     visibility: hidden;
 }
-<<<<<<< HEAD
-=======
 
 .history__item {
     padding: 10px;
@@ -231,4 +232,24 @@ footer {
 .jointeam {
     padding: 80px 50px;
 }
->>>>>>> 9cf795272870702fbc6b39b6fe1b5b55e60e5750
+
+.intro-about{
+padding-top: 150px;
+display: flex;
+}
+
+
+.intro-about__image{
+margin-top: -280px;
+padding-left: 75px;
+}
+
+.intro-about__text{
+   text-align: left;
+   padding-right: 150px;
+}
+
+.intro-about__title{
+    text-align: left;
+}
+
