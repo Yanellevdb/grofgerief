@@ -1,10 +1,15 @@
 * {
     box-sizing: border-box;
-  }
+    margin: 0px;
+}
 
 body {
     font-family: futura-pt;
     background-image: linear-gradient(#3C5943, #888C69);
+}
+
+p{
+    padding-bottom: 30px;
 }
 
 nav {
@@ -34,13 +39,12 @@ h2 {
     text-align: center;
     color: #F5F5EF;
     font-size: 35px;
-    margin-top: -20px;
 }
 
 h3 {
     text-align: center;
     color: #F5F5EF;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .btn {
@@ -48,7 +52,7 @@ h3 {
     color: #FFF;
     padding: 15px;
     text-decoration: none;
-	padding: 1rem;
+	padding-top: 1rem;
     background-image: -webkit-linear-gradient(45deg, #D97652 50%, transparent 50%);
     background-image: linear-gradient(45deg,#D97652 50%, transparent 50%);
     background-position: 100%;
@@ -66,6 +70,10 @@ h3 {
     color: #F5F5EF;
     padding: 15px 25px;
     text-decoration: none;
+}
+
+.btn--green:hover {
+    background-color:#D97652;
 }
 
 .btn--lightgreen {
@@ -241,9 +249,13 @@ footer {
     padding: 80px 50px;
 }
 
-.intro-about{
-padding-top: 150px;
+/*home*/
+
+#intro-about{
+padding-top: 100px;
+padding-bottom: 03px;
 display: flex;
+justify-content: center;
 }
 
 
@@ -254,10 +266,253 @@ padding-left: 75px;
 
 .intro-about__text{
    text-align: left;
-   padding-right: 150px;
+   padding-right: 300px;
+   color: white;
 }
 
 .intro-about__title{
     text-align: left;
+    color: #F5F5EF;
 }
+
+.intro-partners{
+background-color: #F5F5EF;
+padding: 40px
+}
+
+.intro-partners h2, h3{
+    color: #3C5943;
+    background: inherit;
+
+}
+
+.partners{
+position: relative;
+display: flex;
+justify-content: center;
+padding: 0px 0px 60px 0px;
+margin-bottom: -10px;
+}
+
+.partner1{
+    clip-path: circle(35%);
+}
+
+.partner2{
+    clip-path: circle(35%);
+}
+
+.partner3{
+    clip-path: circle(40%);
+}
+
+.partner4{
+    clip-path: circle(40%);
+    background-color: white;
+    padding: 15px;
+}
+
+.intro-events{
+    background-color: #d97652;
+    height: 550px;
+    position: relative;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+}
+
+.intro-events h3, .intro-events p{
+ color:white;
+ text-align: center;
+}
+
+.intro-events__event{
+    background-color: #3C5943;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 20px 28% 20px 28%;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro-events__event a{
+    text-decoration: none;
+    color: white;
+    order: 3;
+    padding-left: 70%;
+    font-size: 22px;
+}
+
+.intro-events__event__datenumber{
+font-size: 40px;
+order: 1;
+padding-left: 20px;
+}
+
+.intro-events__event__datemonth{
+   transform: rotate(-90deg);
+   order: 2;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.intro-products{
+    background: white;
+    padding: 60px 0px 150px 0px;
+}
+
+.intro-products h2{
+    color: #3C5943;
+}
+
+.intro-products p{
+    text-align: center;
+}
+
+.intro-products__products{
+    background-color: #888c69;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.name p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.price p{
+    margin-top: -10px;
+    font-size: 20px;
+    color: white;  
+    padding-bottom: 30px;
+}
+
+
+.intro-products__grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20%; 
+    gap: 0px;
+    justify-content: center;  
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.btn--price{
+text-decoration: none;
+background-color: #3C5943 ;
+padding: 15px;
+color: white;
+}
+
+.btn--price:hover {
+    background-color:#d97652 ;
+}
+
+.intro-aanmelden{
+    background-color: #3C5943;
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+}
+
+.intro-aanmelden h2{
+    text-align: left;
+}
+
+.intro-aanmelden__tekst{
+    text-align: left;
+    order: 2;
+    flex-basis: 60%;
+    align-self: center;
+    padding-left: 5%;
+    color: white;
+    padding-right: 220px;
+
+}
+video::-webkit-media-controls{
+    display: none;
+    -webkit-appearance: none;
+}
+
+.intro-aanmelden__video{
+    order:1;
+    flex-basis: 40%;
+}
+
+.intro-inspiratie{
+    display:flex;
+    height: 30vh;
+    padding-top: 60px;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro-inspiratie h2{
+color: #3C5943;
+text-align: left;
+}
+
+.intro-inspiratie__heading2{
+    flex-basis: 30%;
+    padding-left: 15px;
+}
+
+.intro-blog{
+    background-color: #F5F5EF;
+    height: 100vh;
+}
+
+.intro-inspiratie__blogpost{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex: 2 0 0;
+}
+
+.intro-inspiratie__blogpost img{
+    width: 70%;
+    height: 70%;
+    padding-left: 10%;
+    flex: 1 0 0;
+}
+
+h4{
+  text-align: left;
+  font-size: 22px;
+  color: #3C5943;
+
+}
+
+.intro-inspiratie__tekst{
+    flex-basis: 30%;
+}
+
+.contactform{
+    background-color: #888C69;
+    padding: 100px;
+}
+
+.contactform__btn{
+ text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
