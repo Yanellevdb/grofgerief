@@ -247,6 +247,9 @@ input[type=submit]{
     padding: 10% 15% 10% 15%;
     text-align: center;
 }
+.summary--about h3{
+    color: white;
+}
 
 .facts {
     display: flex;
@@ -680,7 +683,6 @@ h4{
   text-align: left;
   font-size: 22px;
   color: #3C5943;
-
 }
 
 .intro-inspiratie__tekst{
