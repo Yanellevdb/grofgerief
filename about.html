@@ -7,6 +7,7 @@
     <title>Grofgerief</title>
     <link rel="stylesheet" href="yanelle.css">
     <link rel="stylesheet" href="https://use.typekit.net/ogn7fqe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -49,27 +50,31 @@
             <h2>of who we are and what we do</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae. Vestibulum finibus ipsum mauris, sit amet faucibus ipsum mattis ut. Ut dignissim dapibus ornare. Praesent quis mi non magna feugiat vulputate. Vestibulum at fringilla quam. Praesent ut rutrum tortor. Nam placerat ante ac dui feugiat, non gravida orci molestie. Etiam non est pretium ipsum pellentesque vestibulum vel sed libero.</p>
         </div>
-        <div class="waarden_titels">
+        <div class="waarden__titels">
             <div class="waarden__titel">
-                <h4>Ecologisch</h4>
+                <img src="images/sapling.svg" alt="symbool ecologisch" class="waarden__img">
+                <h3>Ecologisch</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae. Vestibulum finibus ipsum mauris, sit amet faucibus ipsum mattis ut. Ut dignissim dapibus ornare. Praesent quis mi non magna feugiat vulputate. Vestibulum at fringilla quam. Praesent ut rutrum tortor. Nam placerat ante ac dui feugiat, non gravida orci molestie. Etiam non est pretium ipsum pellentesque vestibulum vel sed libero.</p>
             </div>
             <div class="waarden__titel">
-                <h4>Duurzaam</h4>
+                <img src="images/planet-earth.svg" alt="symbool duurzaam" class="waarden__img">
+                <h3>Duurzaam</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae. Vestibulum finibus ipsum mauris, sit amet faucibus ipsum mattis ut. Ut dignissim dapibus ornare. Praesent quis mi non magna feugiat vulputate. Vestibulum at fringilla quam. Praesent ut rutrum tortor. Nam placerat ante ac dui feugiat, non gravida orci molestie. Etiam non est pretium ipsum pellentesque vestibulum vel sed libero.</p>
             </div>
             <div class="waarden__titel">
-                <h4>Sociaal</h4>
+                <img src="images/network.svg" alt="symbool sociaal" class="waarden__img">
+                <h3>Sociaal</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae. Vestibulum finibus ipsum mauris, sit amet faucibus ipsum mattis ut. Ut dignissim dapibus ornare. Praesent quis mi non magna feugiat vulputate. Vestibulum at fringilla quam. Praesent ut rutrum tortor. Nam placerat ante ac dui feugiat, non gravida orci molestie. Etiam non est pretium ipsum pellentesque vestibulum vel sed libero.</p>
             </div>
             <div class="waarden__titel">
-                <h4>Inspirerend</h4>
+                <img src="images/lightbulb.svg" alt="symbool inspirerend" class="waarden__img">
+                <h3>Inspirerend</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae. Vestibulum finibus ipsum mauris, sit amet faucibus ipsum mattis ut. Ut dignissim dapibus ornare. Praesent quis mi non magna feugiat vulputate. Vestibulum at fringilla quam. Praesent ut rutrum tortor. Nam placerat ante ac dui feugiat, non gravida orci molestie. Etiam non est pretium ipsum pellentesque vestibulum vel sed libero.</p>
             </div>
         </div>
     </div>
     <div class="jointeam">
-        <h2>Kom jij ons team versterken?</h2>
+        <h2>Kom jij ons team versterken? <br> Stuur ons dan zeker een berichtje!</h2>
         <form action="mailto:info@grofgerief.be">
             <label for="name">Naam</label>
             <input type="text">
@@ -81,29 +86,36 @@
         </form>
     </div>
     <div class="quote">
-        <div class="quote__text">
-        <h2>"Thank you for supporting our project!"</h2>      
-        <h3>Grofgerief Team</h3>
+        <div>
+        <h2 id="quote__text">"Thank you for supporting our project!"<br>Grofgerief Team</h2>      
+        <!--<h3 id="quote__text">Grofgerief Team</h3>-->
     </div>
     </div>
     <footer>
-        <div>
-            <h2>Onze contactgegevens</h2>
-        </div>
         <div class="footer--info">
-           <div>
+           <div class="footer--info--item">
                <p>
                 <i>E-mail: info@grofgerief.be</i><br>
                 <i>Tel: +32 477 282 013</i>
                </p>
+           </div>
+            <div class="footer--info--item">
+               <p>
+                <i>Maanstraat 5</i><br>
+                <i>2800 Mechelen</i>
+               </p>
+            </div>
+            <div class="footer--info--item">
+                <div class="footer--social-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
         </div>
-        <div>
-            <a class="social-icon" href=""><img src="/images/facebook.svg" alt="Facebook" width="20px"></a>
-            <a class="social-icon" href=""><img src="/images/instagram.svg" alt="Instagram" width="20px"></a>
-        </div>
-        </div>
-        <div class="footer--logo"> <img src="/images/Logo grofgerief official.svg" alt="" width="150px"></div>
     </footer>
+    <div class="footer--logo"> 
+        <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
+    </div>
     <script src="public/javascript/gerief.js"></script>
 </body>
 </html>
