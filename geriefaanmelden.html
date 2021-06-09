@@ -64,7 +64,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -88,7 +88,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -112,7 +112,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -136,7 +136,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -160,7 +160,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -184,7 +184,7 @@
                         &#9679; lorum ipsum
                     </p>
                 </div>
-                <div class="item-rules"><img src="images/lijn2.png"></div>
+                <div class="item-rules lijn-rules"><img src="images/lijn2.png"></div>
                 <div class="item-rules">
                     <p><strong>Niet</strong></p>
                     <p>
@@ -199,22 +199,36 @@
     </div>
     </div>
     <div class="geriefaanbieden">
-        <h2>Biedt hier jouw grofgerief aan</h2>
-        <h3>En maak deel uit van onze community</h3>
-        <div class="geriefaanbieden-form">
-            <form action="mailto:info@grofgerief.be">
-                <input type="radio" id="hout" name="materiaal" value="hout">
-                <label for="hout">Hout</label><br>
-                <input type="radio" id="metaal" name="materiaal" value="metaal">
-                <label for="metaal">Metaal</label><br>
-                <input type="radio" id="kunststof" name="materiaal" value="kunststof">
-                <label for="kunststof">Kunststof</label><br>
-                <input type="radio" id="textiel" name="materiaal" value="textiel">
-                <label for="textiel">Textiel</label><br>
-                <input type="radio" id="meubilair" name="materiaal" value="meubilair">
-                <label for="meubilair">Meubilair</label><br>
-                <input type="radio" id="banden" name="materiaal" value="banden">
-                <label for="banden">Rubberen banden</label>
+        <h3>Maak deel uit van onze community</h3>
+        <h2>Biedt hier jouw grofgerief aan!</h2>
+            <form class="geriefaanbieden-form" action="mailto:info@grofgerief.be">
+                <label for="materiaal">Soort materiaal:</label>
+                <div class="form--materiaal">
+                    <div class="materiaal">
+                        <input type="radio" id="hout" name="materiaal" value="hout">
+                        <label for="hout">Hout</label><br>
+                    </div>
+                    <div class="materiaal">
+                        <input type="radio" id="metaal" name="materiaal" value="metaal">
+                        <label for="metaal">Metaal</label><br>
+                    </div>
+                    <div class="materiaal">
+                        <input type="radio" id="kunststof" name="materiaal" value="kunststof">
+                        <label for="kunststof">Kunststof</label><br>
+                    </div>
+                    <div class="materiaal">
+                        <input type="radio" id="textiel" name="materiaal" value="textiel">
+                        <label for="textiel">Textiel</label><br>
+                    </div>
+                    <div class="materiaal">
+                        <input type="radio" id="meubilair" name="materiaal" value="meubilair">
+                        <label for="meubilair">Meubilair</label><br>
+                    </div>
+                    <div class="materiaal">
+                        <input type="radio" id="banden" name="materiaal" value="banden">
+                        <label for="banden">Banden</label>
+                    </div>
+                </div>
                 <label for="name">Naam</label>
                 <input type="text">
                 <label for="email">E-mail</label>
@@ -222,18 +236,29 @@
                 <label for="telefoonnummer">Telefoonnummer</label>
                 <input type="tel">
                 <label for="message">Uitleg omtrent jouw product</label>
-                <textarea rows="4" cols="40" name="description">Geef wat extra info...</textarea>
-                <p>Upload een foto van je grofgerief van dichtbij</p>
-                <input type="file" id="myFile" name="filename">
-                <p>Upload een foto van je grofgerief van verderaf</p>
-                <input type="file" id="myFile" name="filename">
-                <p>Upload een foto van je grofgerief langs links</p>
-                <input type="file" id="myFile" name="filename">
-                <p>Upload een foto van je grofgerief langs rechts</p>
-                <input type="file" id="myFile" name="filename">
-                <input type="submit" value="Send" class="btn">
+                <textarea rows="4" cols="40" name="description" class="uitleg">Geef wat extra info...</textarea>
+                <div>
+                    <div class="upload-name">
+                        <p>Upload een foto van je grofgerief van <i>dichtbij</i></p>
+                        <input type="file" id="myFile" name="filename">
+                    </div>
+                    <div class="upload-name">
+                        <p>Upload een foto van je grofgerief van <i>verderaf</i></p>
+                        <input type="file" id="myFile" name="filename">
+                        </div>
+                        <div class="upload-name">
+                        <p>Upload een foto van je grofgerief langs <i>links</i></p>
+                        <input type="file" id="myFile" name="filename">
+                    </div>
+                    <div class="upload-name">
+                        <p>Upload een foto van je grofgerief langs <i>rechts</i></p>
+                        <input type="file" id="myFile" name="filename">
+                    </div>
+                </div>
+                <input type="submit" value="Aanvraag indienen" class="btn">
             </form>
-        </div>
+    
+    </div>
         <footer>
             <div class="footer--info">
                 <div class="footer--info--item">

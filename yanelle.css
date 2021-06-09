@@ -800,20 +800,21 @@ flex: 30%;
 .recover-items {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 40% 40%;
+    grid-template-rows: 50% 50%;
     gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #F5F5EF;
     padding: 15px;
+    margin: 10%;
 }
 
 .recover-item {
     background-color: #D97652;
     padding: 10px;
     margin: 10px;
-    box-shadow: 10px;
+    border-radius: 15px;
 }
 
 .recover-item h3 {
@@ -839,7 +840,49 @@ flex: 30%;
 
 .geriefaanbieden {
     background-color: #888C69;
+    padding: 10%;
+    justify-content: center ;
 }
+
+.geriefaanbieden h3 {
+    color: #F5F5EF;
+}
+
+.geriefaanbieden-form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: center;
+    justify-content: center;
+    margin: 15%;
+}
+
+.form--materiaal {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+.materiaal {
+    padding: 10px;
+}
+
+.geriefaanbieden-form input {
+    margin-bottom: 20px;
+}
+
+.uitleg {
+    margin-bottom: 20px;
+}
+
+.upload-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
 
 /*winkelwagen*/
 
@@ -1321,6 +1364,49 @@ flex: 30%;
         padding-left: 10%;
         font-size: 25px;
     }
+
+    /*gerief aanmelden*/
+    
+.recover-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5F5EF;
+    padding: 15px;
+    margin: 0%;
+}
+
+    .recover-item {
+        background-color: #D97652;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    .recover-item h3 {
+        color:#F5F5EF
+    }
+
+    .recover-item__title {
+        padding: 25px;
+        margin: 25px;
+    }
+
+    .lijn-rules{
+        display: none;
+    }
+
+    .recover-item__tekst {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
     /*footer*/
     .footer--info {
         display: flex;
