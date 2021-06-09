@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,74 +11,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
     <nav>
         <a href="gerief.html">Gerief</a>
         <a href="geriefaanmelden.html">Gerief aanmelden</a>
         <a href="kalender.html">Kalender</a>
-        <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief" width="250px"/></a></li>
+        <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief"
+                width="250px" /></a></li>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
         <div>
-        <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px"/></a>
-        <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px"/></a>
-        <button onclick="myFunction()" class="login-btn">
-            <img src="/images/login.svg" width="70px">
-        </button>  
+            <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px" /></a>
+            <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px" /></a>
+            <button onclick="myFunction()" class="login-btn">
+                <img src="/images/login.svg" width="70px">
+            </button>
     </nav>
     <div class="toggle-color">
-    <div class="toggle">
-        <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
-        <div class="toggle-hover"><a href="account.html">Inloggen</a></div>
-        <div class="toggle-hover"><a href="account.html">Aanmelden</a></div>
-    </div>
-    </div>
-
-       <div class="account-header">
-        <h2>Dag Saar!</h2>
-        <h3>Wat wil je bekijken?</h3>
-        <div class="account-header__buttons">
-            <a href="mijnfavorieten.html" class="btn--lightgreen">Mijn favorieten &#128147;</a>
-            <a href="mijnpunten.html" class="btn--lightgreen">Mijn punten &#128175;</a>
+        <div class="toggle">
+            <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+            <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+            <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
         </div>
-       </div>
+    </div>
+    <div class="header">
+        <div class="white-account">
+            <div class="white-account-img"><img src="images/handshake.svg" alt="handshake"></div>
+            <h2>Dag Saar!</h2>
+            <h3>Wat wil je bekijken?</h3>
+            <div class="account-header__buttons">
+                <a href="mijnfavorieten.html" class="btn--lightgreen">Mijn favorieten &#128147;</a>
+                <a href="mijnpunten.html" class="btn--lightgreen">Mijn punten &#128175;</a>
+            </div>
+        </div>
+    </div>
 
 
-
-        <footer>
-            <div class="footer--info">
-               <div class="footer--info--item">
-                   <p>
+    <footer>
+        <div class="footer--info">
+            <div class="footer--info--item">
+                <p>
                     <i>E-mail: info@grofgerief.be</i><br>
                     <i>Tel: +32 477 282 013</i>
-                   </p>
-               </div>
-                <div class="footer--info--item">
-                   <p>
+                </p>
+            </div>
+            <div class="footer--info--item">
+                <p>
                     <i>Maanstraat 5</i><br>
                     <i>2800 Mechelen</i>
-                   </p>
-                </div>
-                <div class="footer--info--item">
-                    <div class="footer--social-icon">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
+                </p>
+            </div>
+            <div class="footer--info--item">
+                <div class="footer--social-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
                 </div>
             </div>
-        </footer>
-        <div class="footer--logo"> 
-            <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
         </div>
-        <script>
-            function myFunction() {
-               var element = document.querySelector(".toggle");
-               if(element.style.display === "block"){
-                element.style.display="none";
-               } else{
-                element.style.display="block"; 
-               } 
+    </footer>
+    <div class="footer--logo">
+        <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.querySelector(".toggle");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
             }
-        </script>
-    </body>
-    </html>
+        }
+    </script>
+</body>
+
+</html>

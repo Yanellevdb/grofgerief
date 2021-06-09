@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grofgerief - Kalender</title>
+    <link rel="stylesheet" href="yanelle.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ogn7fqe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav>
+        <a href="gerief.html">Gerief</a>
+        <a href="geriefaanmelden.html">Gerief aanmelden</a>
+        <a href="kalender.html">Kalender</a>
+        <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief" width="250px"/></a></li>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div>
+        <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px"/></a>
+        <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px"/></a>
+        <button onclick="myFunction()" class="login-btn">
+            <img src="/images/login.svg" width="70px">
+        </button> 
+        
+    </nav>
+    <div class="toggle-color">
+    <div class="toggle">
+        <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+        <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+        <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
+    </div>
+    </div>
+    
+    <div class="header">
+        <div class="white">
+        <h1>Workshop met hout</h1>
+        <h2> Zaterdag 10 april 2021 </h2>
+        <h3></h3>
+        <p class="header-paragaph">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </p>
+        <div class="event-detail">
+            
+            <div class="event-left">
+            <h3>Knutselen met hout!</h3>  
+            <img src="/images/hardhout2.jpg" alt="hout" width="100%">
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                <br><br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            </div>
+            <div class="event-right">
+                <h2>Klinkt dat als muziek in jouw oren?
+                    <br>Schrijf je dan snel in voor deze workshop!</h2>
+                <form class="form-event" action="">
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="text" id="email" name="email">
+                    <div class="checkout-info"><label for="aantal">Aantal:</label>
+                        <select name="aantal" id="aantal">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        </div>
+
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message"><br>
+                </form>
+                <div class="contactform__btn"><a class= "btn" href="blog.html">Send</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="public/javascript/gerief.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.querySelector(".toggle");
+           if(element.style.display === "block"){
+            element.style.display="none";
+           } else{
+            element.style.display="block"; 
+           } 
+        }
+    </script>
+</body>
+</html>
