@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grofgerief - Contact</title>
     <link rel="stylesheet" href="yanelle.css">
-    <link rel="stylesheet" href="yanelle.css">
     <link rel="stylesheet" href="https://use.typekit.net/ogn7fqe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
     <nav>
@@ -26,12 +28,12 @@
     <div class="header">
         <h1 class="ml3">Grofgerief, <br>daarmee ben ik gegriefd! <br></h1>
         <h2 class= "ml4"> Ik draag een steentje bij aan circulaire economie. </h2>
-        <a href="#contact">Continue</a><br>
-        <img src="/images/down-arrow.svg" alt="arrows" width="50px">
+        <a href="#summary" class="btn">Continue</a><br>
+        <img src="/images/down-arrow.svg" alt="arrows" width="30px">
     </div>
-    <div id="contact">
+    <div class="contact">
         <h2>Heb je nog vragen? <br> Stuur ons dan zeker een berichtje!</h2>
-        <form action="mailto:info@grofgerief.be">
+        <form action="mailto:info@grofgerief.be" class="contact__contactform">
             <label for="name">Naam</label>
             <input type="text">
             <label for="email">E-mail</label>
@@ -41,13 +43,18 @@
             <input type="submit" value="Send" class="btn">
         </form>
     </div>
-    <div>
+    <div class="magazijn">
         <h3>Kom langs bij</h3>
         <h2>Onze magazijnen</h2>
-        <p>Zandpoortvest 60 <br> 2800 Mechelen</p>
-        <img src="images/lijn.png" alt="lijn">
-        <a href="https://goo.gl/maps/fdXQpDSuQj7pU6uW9">Toon route &#8594;</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.5603946048886!2d4.485708715752262!3d51.0242697795585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e433465b85f1%3A0x9754b239b08f90aa!2sZandpoortvest%2060%2C%202800%20Mechelen!5e0!3m2!1sen!2sbe!4v1621540734871!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="magazijn__gegevens">
+            <p class= "magazijn__gegevens__item">Zandpoortvest 60 <br> 2800 Mechelen</p>
+            <img src="images/lijn2.png" alt="lijn" class= "magazijn__gegevens__item">
+            <a href="https://goo.gl/maps/fdXQpDSuQj7pU6uW9" class="btn--route magazijn__gegevens__item">Toon route &#8594;</a>
+        </div>
+    </div>
+    <div class="magazijn__kaart">
+        <iframe class="kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.5603946048886!2d4.485708715752262!3d51.0242697795585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e433465b85f1%3A0x9754b239b08f90aa!2sZandpoortvest%2060%2C%202800%20Mechelen!5e0!3m2!1sen!2sbe!4v1621540734871!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
     </div>
     <footer>
         <div class="footer--info">

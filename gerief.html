@@ -7,6 +7,7 @@
     <title>Grofgerief - Gerief</title>
     <link rel="stylesheet" href="yanelle.css">
     <link rel="stylesheet" href="https://use.typekit.net/ogn7fqe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -24,11 +25,11 @@
     </nav>
     <div class="header">
         <h1 class="ml3">Grofgerief, <br>daarmee ben ik gegriefd! <br></h1>
-        <h2 class= "ml4"> Wie zijn we en wat drijft ons? Check het hier!</h2>
-        <a href="#summary" class="btn">Continue</a>
+        <h2 class= "ml4"> Ik draag een steentje bij aan circulaire economie. </h2>
+        <a href="#summary" class="btn">Continue</a><br>
         <img src="/images/down-arrow.svg" alt="arrows" width="30px">
     </div>
-    <div id="summary">
+    <div class="summary--gerief">
         <h3>Three reasons</h3>
         <h2>why to choose Grofgerief</h2>
         <div class="reasons">
@@ -48,70 +49,79 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae.</p>
             </div>
         </div>
-        <div class="gerief-intro">
+    </div>
+    <div class="gerief-intro">
             <h3>Vind hier jouw</h3>
-            <h2>duurzaam en circulair gerief</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper metus nibh, a dictum ligula scelerisque vitae.</p>
+            <h2>duurzaam en circulair gerief</h2><br>
+            <p>Dankzij onze medewerkers kunnen wij steeds de beste goederen aanbieden. Elk stuk dat bij Grofgerief binnenkomt, wordt met de grootste zorg opgeknapt en klaargemaakt voor hergebruik. Neem alvast een kijkje naar al onze producten en aarzel niet iets te reserveren als je interesse hebt! Elk product is uniek, dus snel zijn is de boodschap!</p>
         </div>
         <div class="products">
             <div class="products__filter">
-                <div class="filter__sorteren">
-                    <a href="">Sorteren op &#748;</a>
-                    <img src="" alt="arrow down">
+                <div class="filter__sorteren filter">
+                    <a href="">Sorteren op</a>
+                    <img src="images/down-arrow (1).svg" alt="arrow down" class="filter--arrow">
                 </div>
-                <div class="filter__categorie">
-                    <a href="">Categorie &#748;</a>
-                    <img src="" alt="arrow down">
+                <div class="filter__categorie filter">
+                    <a href="">Categorie</a>
+                    <img src="images/down-arrow (1).svg" alt="arrow down" class="filter--arrow">
                 </div>
-                <div class="filter__prijs">
-                    <a href="">Prijs &#748;</a>
-                </div>
-                <a href="" class="btn">Toon resultaten &#8594;</a>
-            </div>
-            <div class="products__items">
-                <div>
-                    <a href="images/hardhout.JPG"><img src="" alt="productfoto"></a>
-                    <img src="" alt="heart">
-                    <h2>Hardhout</h2>
-                    <p>€12,00/stuk</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
+                <div class="filter__prijs filter">
+                    <a href="">Prijs</a>
+                    <img src="images/down-arrow (1).svg" alt="arrow down" class="filter--arrow">
                 </div>
                 <div>
-                    <img src="images/pallet.jpg" alt="productfoto">
-                    <img src="" alt="heart">
-                    <h2>Houten pallet</h2>
-                    <p>€6,00/stuk</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
-                </div>
-                <div>
-                    <img src="images/metaal.jpg" alt="productfoto">
-                    <img src="" alt="heart">
-                    <h2>Metalen frame</h2>
-                    <p>€10,00/stuk</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
-                </div>
-                <div>
-                    <img src="images/autoband.jpg" alt="productfoto">
-                    <img src="" alt="heart">
-                    <h2>Autoband</h2>
-                    <p>€5,00/stuk</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
-                </div>
-                <div>
-                    <img src="images/laminaar.jpg" alt="productfoto">
-                    <img src="" alt="heart">
-                    <h2>Laminaat</h2>
-                    <p>€0,70/stuk</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
-                </div>
-                <div>
-                    <img src="images/glijbaan.jpg" alt="productfoto">
-                    <img src="" alt="heart">
-                    <h2>Glijbaan</h2>
-                    <p>€14,00</p>
-                    <a href="" class="btn--green">Toevoegen aan winkelmand</a>
+                <a href="" class="btn--filter">Toon resultaten &#8594;</a>
                 </div>
             </div>
+            
+        <div class="products">
+            
+            <div class= "products__grid"> 
+            <div class= "products__products"> 
+                <div> <img src="images/glijbaan.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Glijbaan</p></div>
+                <div class="price"><p>€14,00</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+            <div class= "products__products"> 
+                <div> <img src="images/laminaar.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Laminaat</p></div>
+                <div class="price"><p>€0,70/stuk</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+            <div class= "products__products"> 
+                <div> <img src="images/autoband.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Autoband</p></div>
+                <div class="price"><p>€5,00/stuk</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+            <div class= "products__products"> 
+                <div> <img src="images/hardhoutje2.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Hardhout</p></div>
+                <div class="price"><p>€12,00/stuk</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+            <div class= "products__products"> 
+                <div> <img src="images/pallet.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Houten pallet</p></div>
+                <div class="price"><p>€6,00/stuk</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+            <div class= "products__products"> 
+                <div> <img src="images/metaal.jpg" alt="productfoto" width="100%"></div>
+                <img src="" alt="heart">
+                <div class="name"><p>Metalen frame</p></div>
+                <div class="price"><p>€10,00/stuk</p></div>
+                <div><a class= "btn--price" href="">Toevoegen aan winkelmand</a></div>
+            </div>
+        </div>
+        </div>
+        </div>
             <a href="">1</a>
             <a href="">2</a>
             <a href="">3</a>

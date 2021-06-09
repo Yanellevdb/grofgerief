@@ -240,11 +240,13 @@ input[type=submit]{
     background-image: url(./images/plant.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: darken;
     background-size: cover;
     color: #F5F5EF;
     padding: 10% 15% 10% 15%;
     text-align: center;
 }
+
 .summary--about h3{
     color: white;
 }
@@ -268,6 +270,8 @@ input[type=submit]{
     align-content: center;
     align-items: center;
     text-transform: uppercase;
+    color: white;
+    text-align: center;
 }
 
 .history {
@@ -278,13 +282,13 @@ input[type=submit]{
     background-color: #D97652;
     color: #F5F5EF;
     text-decoration: none;
-    border-radius: 35px;
     z-index: 1;
     align-items: center;
 }
 
 .history__item {
     padding: 10px;
+    align-content: center;
 }
 
 .waarden {
@@ -301,7 +305,7 @@ input[type=submit]{
 
 .waarden__inleiding {
     padding: 0% 10%;
-    margin: 5%;
+    margin: 5% 5% -8% 5%;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -399,6 +403,232 @@ margin-bottom: -10px;
     font-size: 30px;
 }
 
+/*gerief*/
+
+.summary--gerief h3 {
+    color: #F5F5EF;
+}
+
+.summary--gerief {
+    padding: 5% 5% 0% 5%;
+    background-color: #3C5943;
+    color: #F5F5EF;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.summary--gerief:after {
+    padding: 5%;
+    background-color: #3C5943;
+    color: #F5F5EF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    background: inherit;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    transform-origin: top left;
+    transform: skewY(-3deg);
+    z-index: -1;
+}
+
+.summary--gerief h4 {
+    color: #F5F5EF;
+    text-align: center;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.reason {
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.gerief-intro {
+    margin: 10%;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.gerief-intro h2 {
+    color: #3C5943;
+}
+
+.products__filter{
+    display: flex;
+    flex-direction: row;
+}
+
+.filter {
+    padding: 10px 20px;
+    margin: 2%;
+    border-color: #3C5943;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.filter a {
+    text-decoration: none;
+    color: #3C5943;
+}
+
+.filter--arrow {
+    width: 20px;
+    padding-left: 10px;
+}
+
+.btn--filter {
+    background-color:#D97652;
+    color: #F5F5EF;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.products{
+    background: white;
+    padding: 60px 0px 150px 0px;
+}
+
+.products h2{
+    color: #3C5943;
+}
+
+.products p{
+    text-align: center;
+}
+
+.products__products{
+    background-color: #888c69;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.name p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.price p{
+    margin-top: -10px;
+    font-size: 20px;
+    color: white;  
+    padding-bottom: 30px;
+}
+
+
+.products__grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20%; 
+    gap: 0px;
+    justify-content: center;  
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.btn--price{
+text-decoration: none;
+background-color: #3C5943 ;
+padding: 15px;
+color: white;
+}
+
+.btn--price:hover {
+    background-color:#d97652 ;
+}
+
+/*contact*/
+
+.contact h2 {
+    color:#3C5943;
+}
+
+.contact {
+    margin: 10% 0% 10% 0%;
+}
+
+.contact__contactform label{
+    color:#3C5943
+}
+
+.magazijn {
+    background-color:#D97652;
+    color: #F5F5EF;
+    align-items: center;
+    padding: 7% 7% 15% 7%;
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.magazijn:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    background: inherit;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    transform-origin: bottom left;
+    transform: skewY(-3deg);
+    background-color:#D97652;
+    z-index: -1;
+}
+
+.magazijn h3 {
+    color:#F5F5EF;
+}
+
+.btn--route {
+    background-color: #888C69;
+    text-decoration: none;
+    color: #F5F5EF;
+    padding: 10px;
+}
+
+.btn--route:hover{
+    background-color: #3C5943;
+}
+
+.magazijn__gegevens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5% 10%;
+}
+
+.magazijn__kaart {
+    display: flex;
+    background-color: #3C5943;
+    padding-bottom: 7%;
+    justify-content: space-around;
+}
+
+.kaart {
+    border: 3px solid green;
+    margin-top: -15%;
+    padding: 10px;
+    z-index: 1;
+}
 
 @media (max-width:400px) {
 
@@ -411,9 +641,37 @@ margin-bottom: -10px;
     /*about*/
     .fact {
         padding: 2% 0%;
-        margin: 3%;
+        margin: 0%;
         border-radius: 25px;
+        text-align: center;
     }
+
+    .facts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .history {
+        padding: 20px;
+        margin: -7% 25px 10px 25px;
+        text-decoration: none;
+    }
+
+    
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4em;
+    padding: 20px;
+    background-color: #3C5943;
+}
 }
 
 @media (max-width: 375px) {
@@ -425,10 +683,10 @@ margin-bottom: -10px;
     }
     
     .fact {
-        background-color: #D97652;
         padding: 2% 0%;
         margin: 5%;
         border-radius: 25px;
+        text-align: center;
     }
     
     .history {
@@ -490,6 +748,11 @@ margin-bottom: -10px;
       form {
         margin: 5% 15%;
     }
+
+    /*contact*/
+   .contact{
+       margin: 15% 2%;
+   }
 
     /*algemeen*/
 
