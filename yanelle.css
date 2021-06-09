@@ -1368,28 +1368,13 @@ flex: 30%;
     /*gerief aanmelden*/
     
 .recover-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #F5F5EF;
-    padding: 15px;
-    margin: 0%;
+    padding: 5px;
+    margin: 0px;
 }
-
-    .recover-item {
-        background-color: #D97652;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 15px;
-    }
-
-    .recover-item h3 {
-        color:#F5F5EF
-    }
-
     .recover-item__title {
         padding: 25px;
         margin: 25px;
