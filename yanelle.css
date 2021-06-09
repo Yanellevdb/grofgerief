@@ -835,6 +835,58 @@ padding-left: 20px;
 
 }
 
+/*blog*/
+.blogcategories{
+    background-color: #3C5943;
+    height: 30vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100% );
+}
+
+.blogcategories h3{
+    color: white;
+}
+
+.allbtn--categories{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn--categories{
+    background-color: #D97652;
+    border-radius: 20px;
+    padding: 0.5% 1% 0.5% 1%;
+    margin: 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.btn--categories:hover{
+    background-color: #888C69;
+}
+
+.blogposts{
+    display: flex;
+}
+
+.blogposts__post{
+    text-decoration: none;
+}
+
+/*account*/
+
+.account-header{
+    height: 100vh;
+    background-color: linear-gradient(#3C5943, #888C69);
+}
+
+.account-header h2{
+    color: #888c69;
+}
+
+
+
+
 
 
 
