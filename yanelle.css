@@ -459,7 +459,7 @@ margin-bottom: -10px;
 }
 
 .gerief-intro {
-    margin: 10%;
+    margin: 10% 10% 0% 10%;
     padding: 5% 10%;
     text-align: center;
 }
@@ -471,11 +471,18 @@ margin-bottom: -10px;
 .products__filter{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .filter {
     padding: 10px 20px;
     margin: 2%;
+   
+}
+
+.keuze {
     border-color: #3C5943;
     border-width: 2px;
     border-style: solid;
@@ -491,16 +498,63 @@ margin-bottom: -10px;
     padding-left: 10px;
 }
 
-.btn--filter {
+.btn--filter{
     background-color:#D97652;
-    color: #F5F5EF;
     text-decoration: none;
     padding: 10px 20px;
+    color: #F5F5EF;
+}
 
+.filter .btn--filter {
+    color: #F5F5EF;
+}
+
+.btn--filter:hover {
+    background-color:#3C5943;
+    color: #F5F5EF;
+}
+
+.call-to-action h2 {
+    color: #3C5943;
+    padding: 5%;
+}
+
+.btn--cta {
+    margin-top: 30px;
+    background-color:#D97652;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #F5F5EF;
+}
+
+.btn--cta:hover {
+    background-color:#888C69;
+}
+
+.call-to-action {
+    margin: 5% 30% 20% 30%;
+    text-align: center;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+.buy-icons {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content:right;
+}
+
+.iconnn:hover {
+    fill:#D97652;
+}
+
+.buy-icon {
+    margin: 2px;
 }
 
 .products{
-    background: white;
     padding: 60px 0px 150px 0px;
 }
 
@@ -516,6 +570,28 @@ margin-bottom: -10px;
     background-color: #888c69;
     text-align: center;
     padding-bottom: 30px;
+    margin: 2%;
+}
+
+.next-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.next-page a {
+    text-decoration: none;
+    color: #3C5943;
+    font-size: 20px;
+}
+
+.next-page--btn {
+    margin: 10px;
+}
+
+.next-page a:hover {
+    color: #D97652;
 }
 
 .name p{
@@ -551,6 +627,41 @@ color: white;
 .btn--price:hover {
     background-color:#d97652 ;
 }
+
+/*product detailpagina*/
+
+.product-detail--achtergrond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#3C5943, #888C69);
+    padding: 5%
+
+}
+
+.product-detail--info {
+    background-color: #F5F5EF;
+    margin: 10% 5%;
+}
+
+.sitepath {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.sitepath a {
+    text-decoration: none;
+    color: #3C5943;
+    padding: 0px 15px;
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+}
+
 
 /*contact*/
 
