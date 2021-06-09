@@ -627,6 +627,41 @@ color: white;
     background-color:#d97652 ;
 }
 
+/*product detailpagina*/
+
+.product-detail--achtergrond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#3C5943, #888C69);
+    padding: 5%
+
+}
+
+.product-detail--info {
+    background-color: #F5F5EF;
+    margin: 10% 5%;
+}
+
+.sitepath {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.sitepath a {
+    text-decoration: none;
+    color: #3C5943;
+    padding: 0px 15px;
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+}
+
+
 /*contact*/
 
 .contact h2 {
