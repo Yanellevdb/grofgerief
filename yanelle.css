@@ -393,6 +393,8 @@ margin-left: 13%;
 flex: 30%;
 }
 
+
+
 .intro-about__text{
     padding-right: 20%;
    text-align: left;
@@ -407,7 +409,7 @@ flex: 30%;
 
 .intro-partners{
 background-color: #F5F5EF;
-padding: 40px;
+
 }
 
 .intro-partners h2, h3{
@@ -417,11 +419,30 @@ padding: 40px;
 }
 
 .partners{
-position: relative;
 display: flex;
-justify-content: center;
-padding: 0px 0px 60px 0px;
 margin-bottom: -10px;
+justify-content: center;
+}
+
+.partner1{
+    clip-path: circle(30%);
+    padding: 30px;
+}
+
+.partner2{
+    clip-path: circle(30%);
+    padding: 30px;
+}
+
+.partner3{
+    clip-path: circle(30%);
+    padding: 30px;
+}
+
+.partner4{
+    clip-path: circle(30%);
+    background-color: white;
+    padding: 80px;
 }
 
 .quote {
@@ -440,12 +461,85 @@ margin-bottom: -10px;
     font-size: 30px;
 }
 
+.intro-events p{
+    padding: 0px 20% 0% 20%;
+}
+
+.intro-inspiratie__tekst{
+    padding: 0px 5% 0 10%;
+}
+
+.intro-inspiratie__image{
+    padding-top: 30px;
+    width: 250%;
+ }
+
+ .intro-aanmelden{
+    background-color: #3C5943;
+    display: flex;
+    direction: column;
+}
+
+.intro-aanmelden h2{
+    text-align: left;
+}
+
+.intro-aanmelden__tekst{
+    text-align: left;
+    order: 2;
+    flex-basis: 60%;
+    align-self: center;
+    padding-left: 5%;
+    color: white;
+}
+video::-webkit-media-controls{
+    display: none;
+    -webkit-appearance: none;
+}
+
+.intro-aanmelden__video{
+    order:1;
+    flex-basis: 40%;
+}
+
+.intro-inspiratie{
+    
+    display:flex;
+    height: 30vh;
+    padding-top: 60px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.intro-inspiratie h2{
+color: #3C5943;
+text-align: left;
+}
+
+.intro-blog{
+    background-color: #F5F5EF;
+    height: 100vh;
+}
+
+.intro-inspiratie__blogpost{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.intro-inspiratie__blogpost img{
+    width: 70%;
+    height: 70%;
+    padding-left: 10%;
+}
+
+
 /*gerief*/
 
 .summary--gerief h3 {
     color: #F5F5EF;
 }
-
 
 .summary--gerief {
     padding: 5% 5% 0% 5%;
@@ -779,13 +873,259 @@ color: white;
     z-index: 1;
 }
 
-@media (max-width:400px) {
+
+@media (max-width:768px) {
+    /*home*/
+
+    .partner1{
+        clip-path: circle(20%);
+        padding: 30px;
+    }
+    
+    .partner2{
+        clip-path: circle(20%);
+        padding: 30px;
+        margin-left: -20%;
+    }
+    
+    .partner3{
+        clip-path: circle(20%);
+        padding: 30px;
+        margin-left: -20%;
+    }
+    
+    .partner4{
+        clip-path: circle(20%);
+        background-color: white;
+        padding: 80px;
+        margin-left: -20%;
+    }
+
+    .intro-events__event a{
+        margin-left: -40%;
+    }
+    
+    .intro-products__grid{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        gap: 0px;
+        padding: 3% 15% 3% 15%;
+        justify-content: center;  
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+
+    .intro-aanmelden{
+       height: 40vh;
+    }
+
+    .intro-blog{
+        background-color: #F5F5EF;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width:375px) {
 
     /*home*/
+
     #intro-about{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+   #intro-about btn{
+       margin-bottom: 10%;
+   }
+
+   .intro-about__text{
+        padding-right: 2%;
+    }
+        
+    #intro-about img{
+        width: 50%;
+    }
+
+    #intro-about h2{
+        font-size: 30px;
+    }
+    #intro-about p{
+        font-size: 23px;
+    }
+
+    .partners{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .partner1{
+        clip-path: circle(23%);
+        padding: 80px;
+        text-align: center;
+
+    }
+    
+    .partner2{
+        clip-path: circle(23%);
+        padding: 80px;
+        text-align: center;
+
+    }
+    
+    .partner3{
+        clip-path: circle(23%);
+        padding: 80px;
+    }
+    
+    .partner4{
+        clip-path: circle(23%);
+        background-color: white;
+        padding: 15px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .intro-events h3{
+        font-size: 15px;
+    }
+    .intro-events h2{
+        font-size: 25px;
+    }
+
+    .intro-events{
+        height: 100%;
+        margin-left: -30%;
+        margin-right: -30%;  
+    }
+
+    .intro-events__event{
+        background-color: #3C5943;
+        border-radius: 100px;
+        padding: 0px;
+        margin: 0px 0% 0px 0%;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .intro-events__event a{
+        text-decoration: none;
+        color: white;
+        padding-left: 0%;
+        font-size: 22px;
+    }
+
+   
+
+    .intro-aanmelden{
+        background-color: #3C5943;
+        display: flex;
+        direction: column;
+    }
+    
+    .intro-aanmelden h2{
+        text-align: center;
+    }
+    
+    .intro-aanmelden__tekst{
+        text-align: left;
+        order: 2;
+        flex-basis: 60%;
+        align-self: center;
+        padding-left: 5%;
+        color: white;
+        padding-right: 220px;
+    
+    }
+    
+  .intro-aanmelden{
+      flex-direction: column;
+  }
+
+  .intro-aanmelden__tekst{
+    text-align: left;
+    flex-basis: none;
+    color: white;
+    padding-right: 5px;
+}
+
+.intro-aanmelden{
+    height: 70vh;
+}
+
+.intro-aanmelden a.btn{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.intro-aanmelden__tekst h2{
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.intro-inspiratie__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.intro-inspiratie__image{
+   padding-top: 50px;
+   padding-right: 75px;
+   width: 250%;
+    text-align: justify;
+}
+
+
+.intro-inspiratie{
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+   margin-left: 33px;
+}
+
+.intro-inspiratie h3{
+    text-align: center;
+}
+
+.intro-inspiratie h2{
+text-align: center;
+font-size: 30px;
+}
+
+.intro-inspiratie .btn{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: -1%;
+    margin-bottom: 20%;
+}
+
+
+.intro-inspiratie__blogpost a{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.intro-inspiratie__blogpost{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.intro-inspiratie__blogpost img{
+    width: 70%;
+    height: 70%;
+    padding-left: 40%;
+}
+
 
     /*about*/
     .fact {
@@ -821,6 +1161,7 @@ nav {
     padding: 20px;
     background-color: #3C5943;
 }
+
 
 }
 
@@ -920,23 +1261,7 @@ nav {
         font-size: 25px;
     }
 }
-.partner1{
-    clip-path: circle(35%);
-}
 
-.partner2{
-    clip-path: circle(35%);
-}
-
-.partner3{
-    clip-path: circle(40%);
-}
-
-.partner4{
-    clip-path: circle(40%);
-    background-color: white;
-    padding: 15px;
-}
 
 .intro-events{
     background-color: #d97652;
@@ -989,6 +1314,7 @@ h5{
 .intro-products{
     background: #F5F5EF;
     padding: 60px 0px 150px 0px;
+    
 }
 
 .intro-products h2{
@@ -1021,8 +1347,9 @@ h5{
 
 .intro-products__grid{
     display: grid;
-    grid-template-columns: 20% 20% 20%; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
     gap: 0px;
+    padding: 3% 15% 3% 15%;
     justify-content: center;  
     column-gap: 20px;
     row-gap: 15px;
@@ -1039,76 +1366,7 @@ color: white;
     background-color:#d97652 ;
 }
 
-.intro-aanmelden{
-    background-color: #3C5943;
-    display: flex;
-    direction: column;
-    flex-wrap: wrap;
-}
 
-.intro-aanmelden h2{
-    text-align: left;
-}
-
-.intro-aanmelden__tekst{
-    text-align: left;
-    order: 2;
-    flex-basis: 60%;
-    align-self: center;
-    padding-left: 5%;
-    color: white;
-    padding-right: 220px;
-
-}
-video::-webkit-media-controls{
-    display: none;
-    -webkit-appearance: none;
-}
-
-.intro-aanmelden__video{
-    order:1;
-    flex-basis: 40%;
-}
-
-.intro-inspiratie{
-    display:flex;
-    height: 30vh;
-    padding-top: 60px;
-    align-items: baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.intro-inspiratie h2{
-color: #3C5943;
-text-align: left;
-}
-
-.intro-inspiratie__heading2{
-    flex-basis: 30%;
-    padding-left: 15px;
-}
-
-.intro-blog{
-    background-color: #F5F5EF;
-    height: 100vh;
-}
-
-.intro-inspiratie__blogpost{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex: 2 0 0;
-}
-
-.intro-inspiratie__blogpost img{
-    width: 70%;
-    height: 70%;
-    padding-left: 10%;
-    flex: 1 0 0;
-}
 
 h4{
   text-align: left;
@@ -1116,14 +1374,12 @@ h4{
   color: #3C5943;
 }
 
-.intro-inspiratie__tekst{
-    flex-basis: 30%;
-}
-
 .contactform{
     background-color: #888C69;
     padding: 100px;
 }
+
+
 
 .contactform h2{
     font-size: 30px;
@@ -1516,6 +1772,9 @@ padding-left: 20px;
     text-decoration: none;
     color: #3C5943;
 }
+
+
+
 
 
 
