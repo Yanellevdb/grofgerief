@@ -475,6 +475,23 @@ flex: 30%;
     justify-content: center;
 }
 
+.reasons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5%;
+}
+.reason {
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .filter {
     padding: 10px 20px;
     margin: 2%;
@@ -767,6 +784,61 @@ flex: 30%;
 
 .btn--gerief:hover {
     background-color: #3C5943;
+}
+
+/*gerief aanmelden*/
+
+#summary h2 {
+    color: #3C5943;
+}
+
+#summary {
+    margin: 10% 25%;
+    text-align: center;
+}
+
+.recover-items {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40% 40%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5F5EF;
+    padding: 15px;
+}
+
+.recover-item {
+    background-color: #D97652;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px;
+}
+
+.recover-item h3 {
+    color:#F5F5EF
+}
+
+.recover-item__title {
+    padding: 25px;
+    margin: 25px;
+}
+
+.recover-item__tekst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.item-rules {
+    padding: 15px;
+}
+
+.geriefaanbieden {
+    background-color: #888C69;
 }
 
 /*winkelwagen*/
