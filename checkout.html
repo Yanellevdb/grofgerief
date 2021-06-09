@@ -24,34 +24,45 @@
         <a href="login.html"><img src="images/login.svg" alt="login" width="65px"/></a>
         </div>
     </nav>
-    <div class="winkelwagen-header">
-        <h2 class="winkelwagen-header__title">Checkout &#128722;</h2>
+    <div class="winkelwagen">
+        <div class="winkelwagen-header">
+            <div class="winkelwagen-header__title">
+                <h2 class="winkelwagen-header__title">Checkout &#128722;</h2>
+            </div>
+            <div class="winkelwagen--formulier">
         <form action="mailto:info@grofgerief.be">
             <label for="name">Naam</label>
-            <input type="text">
+            <input type="text" class="inputveld">
             <label for="email">E-mail</label>
-            <input type="email">
+            <input type="email" class="inputveld">
             <label for="telefoonnummer">Telefoonnummer</label>
-            <input type="tel">
+            <input type="tel" class="inputveld">
             <label for="delivery">Ophalen of Leveren? (Levering: + €5,00)</label>
+            <div class="inputveld">
             <input type="radio" id="ophalen" name="delivery" value="ophalen">
             <label for="ophalen">Ophalen</label><br>
             <input type="radio" id="levering" name="delivery" value="levering">
             <label for="levering">Levering</label><br>
+            </div> 
             <label for="adres">Adres (enkel invullen bij levering)</label>
-            <input type="text">
+            <input type="text" class="inputveld" >
             <input type="submit" value="Reserveer" class="btn">
         </form>
+        <div class="winkelwagen-bevestiging">
+            <p>Dankjewel voor jouw reservatie! Op deze manier heb jij jouw steentje bijgedragen aan de circulaire economie en daarmee ook aan de vermindering van onze afvalberg!
+            <br><br>Tot binnenkort!</p>
+            <h4>Contact</h4>
+            <p>E-mail: info@grofgerief.be<br>Tel: +32 477 282 013</p>
+            <p>Zandpoortvest 60 <br> 2800 Mechelen</p>
+            <div class="social-icon">
+            <a  href=""><img src="/images/facebook.svg" alt="Facebook" width="20px"></a>
+            <a  href=""><img src="/images/instagram.svg" alt="Instagram" width="20px"></a>
+            </div>
+        </div>
     </div>
-    <div class="winkelwagen-bevestiging">
-        <p>Dankjewel voor jouw reservatie! Op deze manier heb jij jouw steentje bijgedragen aan de circulaire economie en daarmee ook aan de vermindering van onze afvalberg!</p>
-        <h3>Tot binnenkort!</h3>
-        <h4>Contact</h4>
-        <p>E-mail: info@grofgerief.be<br>Tel: +32 477 282 013</p>
-        <p>Zandpoortvest 60 <br> 2800 Mechelen</p>
-        <a class="social-icon" href=""><img src="/images/facebook.svg" alt="Facebook" width="20px"></a>
-        <a class="social-icon" href=""><img src="/images/instagram.svg" alt="Instagram" width="20px"></a>
     </div>
+    </div>
+        
     <footer>
         <div class="footer--info">
            <div class="footer--info--item">
