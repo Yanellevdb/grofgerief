@@ -19,9 +19,18 @@
         <div>
         <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px"/></a>
         <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px"/></a>
-        <a href="login.html"><img src="images/login.svg" alt="login" width="65px"/></a>
-        </div>
+        <button onclick="myFunction()" class="login-btn">
+            <img src="/images/login.svg" width="70px">
+        </button> 
+        
     </nav>
+    <div class="toggle-color">
+    <div class="toggle">
+        <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+        <div class="toggle-hover"><a href="account.html">Inloggen</a></div>
+        <div class="toggle-hover"><a href="account.html">Aanmelden</a></div>
+    </div>
+    </div>
     
     <div class="header">
         <h1 class="ml3">Een kalender met alle belangrijke data?<br></h1>
@@ -104,17 +113,18 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     <script src="public/javascript/gerief.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="public\javascripts\animation.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.querySelector(".toggle");
+           if(element.style.display === "block"){
+            element.style.display="none";
+           } else{
+            element.style.display="block"; 
+           } 
+        }
+    </script>
 </body>
 </html>

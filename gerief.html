@@ -19,9 +19,18 @@
         <div>
         <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px"/></a>
         <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px"/></a>
-        <a href="login.html"><img src="images/login.svg" alt="login" width="65px"/></a>
-        </div>
+        <button onclick="myFunction()" class="login-btn">
+            <img src="/images/login.svg" width="70px">
+        </button> 
+        
     </nav>
+    <div class="toggle-color">
+    <div class="toggle">
+        <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+        <div class="toggle-hover"><a href="account.html">Inloggen</a></div>
+        <div class="toggle-hover"><a href="account.html">Aanmelden</a></div>
+    </div>
+    </div>
     <div class="header">
         <h1 class="ml3">Grofgerief, <br>daarmee ben ik gegriefd! <br></h1>
         <h2 class= "ml4"> Wie zijn we en wat drijft ons? Check het hier!</h2>
@@ -149,5 +158,15 @@
         <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
     </div>
     <script src="public/javascript/gerief.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.querySelector(".toggle");
+           if(element.style.display === "block"){
+            element.style.display="none";
+           } else{
+            element.style.display="block"; 
+           } 
+        }
+    </script>
 </body>
 </html>
