@@ -786,6 +786,19 @@ flex: 30%;
 
 .winkelfavo {
     margin-top: 65px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap:3px;
+    justify-content: center;
+}
+
+.btn--winkel {
+    background-color: #D97652;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #F5F5EF;
+    justify-content: center;
+    align-items: center;
 }
 
 .voorstelling h2 {
