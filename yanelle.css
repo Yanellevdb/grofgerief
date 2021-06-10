@@ -1318,7 +1318,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100% );
 }
 
 .aankomende-events{
-    padding: 3% 20% 3% 20%;
+    padding: 3% 5% 3% 5%;
     margin-top: -4%;
     background-color: #F5F5EF;
     text-align: center;
@@ -2362,6 +2362,7 @@ nav {
     }
     .footer--info--item {
         text-align: center;
+        padding: 30px;
     }
     .fa {
         width: 30px;
