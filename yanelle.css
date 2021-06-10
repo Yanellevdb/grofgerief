@@ -128,6 +128,9 @@ form {
     display: none;
 }
 
+/*favorieten*/
+
+
 /*
 footer {
     color: #F5F5EF;
@@ -895,9 +898,8 @@ flex: 30%;
     justify-content: space-between;
     margin: 10px 0px;
 }
+/*favorieten*/
 
-
-/*winkelwagen*/
 
 .winkelwagen {
     display: flex;
@@ -906,6 +908,24 @@ flex: 30%;
     background-image: linear-gradient(#3C5943, #888C69);
     justify-content: center;
 }
+
+
+/*winkelwagen*/
+.account-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#3C5943, #888C69);
+    justify-content: center;
+}
+
+.account-header__title {
+    background-color: #F5F5EF;
+    margin: 5% 5% 10% 5%;
+    width: 80%;
+    padding: 10% 10% 3% 10%;
+}
+
 
 .winkelwagen-header h2 {
     color: #3C5943;
@@ -1068,6 +1088,452 @@ flex: 30%;
 @media (max-width:400px) {
 
     /*home*/
+    #intro-about btn{
+        margin-bottom: 10%;
+    }
+ 
+    .intro-about__text{
+         padding-right: 2%;
+     }
+         
+     #intro-about img{
+         width: 50%;
+     }
+ 
+     #intro-about h2{
+         font-size: 30px;
+     }
+     #intro-about p{
+         font-size: 23px;
+     }
+ 
+     .partners{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+ 
+     }
+     .partner1{
+         clip-path: circle(23%);
+         padding: 80px;
+         text-align: center;
+ 
+     }
+     
+     .partner2{
+         clip-path: circle(23%);
+         padding: 80px;
+         text-align: center;
+ 
+     }
+     
+     .partner3{
+         clip-path: circle(23%);
+         padding: 80px;
+     }
+     
+     .partner4{
+         clip-path: circle(23%);
+         background-color: white;
+         padding: 15px;
+     }
+ 
+     h2{
+         font-size: 30px;
+     }
+ 
+     .intro-events h3{
+         font-size: 15px;
+     }
+     .intro-events h2{
+         font-size: 25px;
+     }
+ 
+     .intro-events{
+         height: 100%;
+         margin-left: -30%;
+         margin-right: -30%;  
+     }
+ 
+     .intro-events__event{
+         background-color: #3C5943;
+         border-radius: 100px;
+         padding: 0px;
+         margin: 0px 0% 0px 0%;
+         flex-direction: row;
+         align-items: center;
+     }
+     
+     .intro-events__event a{
+         text-decoration: none;
+         color: white;
+         padding-left: 0%;
+         font-size: 22px;
+     }
+ 
+    
+ 
+     .intro-aanmelden{
+         background-color: #3C5943;
+         display: flex;
+         direction: column;
+     }
+     
+     .intro-aanmelden h2{
+         text-align: center;
+     }
+     
+     .intro-aanmelden__tekst{
+         text-align: left;
+         order: 2;
+         flex-basis: 60%;
+         align-self: center;
+         padding-left: 5%;
+         color: white;
+         padding-right: 220px;
+     
+     }
+     
+   .intro-aanmelden{
+       flex-direction: column;
+   }
+ 
+   .intro-aanmelden__tekst{
+     text-align: left;
+     flex-basis: none;
+     color: white;
+     padding-right: 5px;
+ }
+ 
+ .intro-aanmelden{
+     height: 70vh;
+ }
+ 
+ .intro-aanmelden a.btn{
+     font-size: 20px;
+     padding: 8px;
+ }
+ 
+ .intro-aanmelden__tekst h2{
+     padding-top: 30px;
+     font-size: 25px;
+ }
+ 
+ .intro-inspiratie__text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+ }
+ 
+ .intro-inspiratie__image{
+    padding-top: 50px;
+    padding-right: 75px;
+    width: 250%;
+     text-align: justify;
+ }
+ 
+ 
+ .intro-inspiratie{
+     flex-direction: column;
+     justify-content: center;
+    text-align: center;
+    margin-left: 33px;
+ }
+ 
+ .intro-inspiratie h3{
+     text-align: center;
+ }
+ 
+ .intro-inspiratie h2{
+ text-align: center;
+ font-size: 30px;
+ }
+ 
+ .intro-inspiratie .btn{
+     font-size: 20px;
+     padding: 10px;
+     margin-top: 5%;
+     margin-left: -1%;
+     margin-bottom: 20%;
+ }
+ 
+ 
+ .intro-inspiratie__blogpost a{
+     padding: 10px;
+     font-size: 20px;
+ }
+ 
+ .intro-inspiratie__blogpost{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+ }
+ 
+ .intro-inspiratie__blogpost img{
+     width: 70%;
+     height: 70%;
+     padding-left: 40%;
+ }
+ 
+ #intro-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#intro-about btn{
+   margin-bottom: 10%;
+}
+
+.intro-about__text{
+    padding-right: 2%;
+}
+    
+#intro-about img{
+    width: 50%;
+}
+
+#intro-about h2{
+    font-size: 30px;
+}
+#intro-about p{
+    font-size: 23px;
+}
+
+.partners{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.partner1{
+    clip-path: circle(23%);
+    padding: 80px;
+    text-align: center;
+
+}
+
+.partner2{
+    clip-path: circle(23%);
+    padding: 80px;
+    text-align: center;
+
+}
+
+.partner3{
+    clip-path: circle(23%);
+    padding: 80px;
+}
+
+.partner4{
+    clip-path: circle(23%);
+    background-color: white;
+    padding: 15px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.intro-events h3{
+    font-size: 15px;
+}
+.intro-events h2{
+    font-size: 25px;
+}
+
+.intro-events{
+    height: 100%;
+    margin-left: -30%;
+    margin-right: -30%;  
+}
+
+.intro-events__event{
+    background-color: #3C5943;
+    border-radius: 100px;
+    padding: 0px;
+    margin: 0px 0% 0px 0%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro-events__event a{
+    text-decoration: none;
+    color: white;
+    padding-left: 0%;
+    font-size: 22px;
+}
+
+
+
+.intro-aanmelden{
+    background-color: #3C5943;
+    display: flex;
+    direction: column;
+}
+
+.intro-aanmelden h2{
+    text-align: center;
+}
+
+.intro-aanmelden__tekst{
+    text-align: left;
+    order: 2;
+    flex-basis: 60%;
+    align-self: center;
+    padding-left: 5%;
+    color: white;
+    padding-right: 220px;
+
+}
+
+.intro-aanmelden{
+  flex-direction: column;
+}
+
+.intro-aanmelden__tekst{
+text-align: left;
+flex-basis: none;
+color: white;
+padding-right: 5px;
+}
+
+.intro-aanmelden{
+height: 70vh;
+}
+
+.intro-aanmelden a.btn{
+font-size: 20px;
+padding: 8px;
+}
+
+.intro-aanmelden__tekst h2{
+padding-top: 30px;
+font-size: 25px;
+}
+
+.intro-inspiratie__text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.intro-inspiratie__image{
+padding-top: 50px;
+padding-right: 75px;
+width: 250%;
+text-align: justify;
+}
+
+
+.intro-inspiratie{
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-left: 33px;
+}
+
+.intro-inspiratie h3{
+text-align: center;
+}
+
+.intro-inspiratie h2{
+text-align: center;
+font-size: 30px;
+}
+
+.intro-inspiratie .btn{
+font-size: 20px;
+padding: 10px;
+margin-top: 5%;
+margin-left: -1%;
+margin-bottom: 20%;
+}
+
+
+.intro-inspiratie__blogpost a{
+padding: 10px;
+font-size: 20px;
+}
+
+.intro-inspiratie__blogpost{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.intro-inspiratie__blogpost img{
+width: 70%;
+height: 70%;
+padding-left: 40%;
+}
+
+    #intro-about{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .partner1{
+        clip-path: circle(20%);
+        padding: 30px;
+    }
+    
+    .partner2{
+        clip-path: circle(20%);
+        padding: 30px;
+        margin-left: -20%;
+    }
+    
+    .partner3{
+        clip-path: circle(20%);
+        padding: 30px;
+        margin-left: -20%;
+    }
+    
+    .partner4{
+        clip-path: circle(20%);
+        background-color: white;
+        padding: 80px;
+        margin-left: -20%;
+    }
+
+    .intro-events__event a{
+        margin-left: -40%;
+    }
+    
+    .intro-products__grid{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        gap: 0px;
+        padding: 3% 15% 3% 15%;
+        justify-content: center;  
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+
+    .intro-aanmelden{
+       height: 40vh;
+    }
+
+    .intro-blog{
+        background-color: #F5F5EF;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    /*home*/
+
     #intro-about{
         display: flex;
         flex-direction: column;
@@ -1889,6 +2355,11 @@ h5 {
 .intro-products{
     background: #F5F5EF;
     padding: 60px 0px 150px 0px;
+}
+
+.intro-products-favo{
+    background: #F5F5EF;
+    padding: 30px 0px 30px 0px;
 }
 
 .intro-products h2 {
