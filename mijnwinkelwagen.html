@@ -14,20 +14,27 @@
 
 <body>
     <nav>
-        <div><a href="gerief.html">Gerief</a></div>
+        <a href="gerief.html">Gerief</a>
         <a href="geriefaanmelden.html">Gerief aanmelden</a>
         <a href="kalender.html">Kalender</a>
-        <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief"
-                width="250px" /></a></li>
+        <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief" width="250px"/></a></li>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
         <div>
-            <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px" /></a>
-            <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px" /></a>
-            <a href="login.html"><img src="images/login.svg" alt="login" width="65px" /></a>
-        </div>
+        <a href="mijnfavorieten.html"><img src="/images/whiteheart.svg" alt="wit hartje" width="30px"/></a>
+        <a href="mijnwinkelwagen.html"><img src="/images/winkelmand.svg" alt="winkelmandje" width="30px"/></a>
+        <button onclick="myFunction()" class="login-btn">
+            <img src="/images/login.svg" width="70px">
+        </button> 
+        
     </nav>
-    
+    <div class="toggle-color">
+        <div class="toggle">
+            <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+            <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+            <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
+        </div>
+    </div>
     <div class="nav-mobile">
         <div class="hambi" role="navigation">
             <div id="menuToggle">
@@ -81,73 +88,83 @@
                             width="30px" /></a>
                 </ul>
             </div>
-            <div class="toggle-color">
-                <div class="toggle">
-                    <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
-                    <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
-                    <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
-                </div>
-            </div>
+          
         </div>
         <div>
             <a href="index.html" class="nav-mobile--logo"><img src="/images/Logo grofgerief - final wit.svg"
                     alt="logo grofgerief" width="150px" /></a>
         </div>
     </div>
+    <div class="toggle-color">
+        <div class="toggle">
+            <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+            <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+            <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
+        </div>
+        </div>
     <div class="winkelwagen">
         <div class="winkelwagen-header">
             <div class="winkelwagen-header__title">
-            <h2>Jouw winkelmandje &#128722;</h2>
-            <p>Je hebt 2 producten toegevoegd aan jouw winkelmandje</p>
+                <h2>Jouw winkelmandje &#128722;</h2>
+                <p>Je hebt 2 producten toegevoegd aan jouw winkelmandje</p>
             </div>
             <div class="product-checkout">
-                <div class="checkout-info checkout--productfoto"><img src="/images/laminaar.jpg" alt="aankoop pallet" width="100%"></div>
+                <div class="checkout-info checkout--productfoto"><img src="/images/laminaar.jpg" alt="aankoop pallet"
+                        width="100%"></div>
                 <p class="checkout-info">Laminaat</p>
                 <div class="checkout-info"><label for="aantal">Aantal:</label>
-                <select name="aantal" id="aantal">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
+                    <select name="aantal" id="aantal">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </div>
                 <p class="checkout-info">€12,00</p>
             </div>
-                <div class="product-checkout">
-                    <div class="checkout-info checkout--productfoto"><a href="geriefdetail.html"><img src="/images/hardhoutje2.jpg" alt="aankoop pallet" width="100%" class="checkout-info"></a></div>
-                    <p class="checkout-info">Hardhout</p>
-                    <div class="checkout-info"><label for="aantal">Aantal:</label>
-                        <select name="aantal" id="aantal">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        </div>
-                    <p class="checkout-info">€12,00</p>
+            <div class="product-checkout">
+                <div class="checkout-info checkout--productfoto"><a href="geriefdetail.html"><img
+                            src="/images/hardhoutje2.jpg" alt="aankoop pallet" width="100%" class="checkout-info"></a>
                 </div>
-                <div class="subtotaal">
-                    <p>SUBTOTAAL: €24,00</p>
-                    <a href="checkout.html" class="btn--checkout">Reserveer</a>
+                <p class="checkout-info">Hardhout</p>
+                <div class="checkout-info"><label for="aantal">Aantal:</label>
+                    <select name="aantal" id="aantal">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </div>
-
+                <p class="checkout-info">€12,00</p>
             </div>
+            <div class="subtotaal">
+                <p>SUBTOTAAL: €24,00</p>
+                <a href="checkout.html" class="btn--checkout">Reserveer</a>
+            </div>
+
         </div>
     </div>
-
+    </div>
     <footer>
         <div class="footer--info">
             <div class="footer--info--item">
                 <p>
-                    <i>E-mail: info@grofgerief.be</i><br>
-                    <i>Tel: +32 477 282 013</i>
+                    <i>Benieuwd naar het verhaal van Grofgerief?</i><br>
+                    <i>Lees het hier!</i>
                 </p>
+                <a href="about.html" class='btn--footer'>Get to know us!</a>
             </div>
+           <div class="footer--info--item">
+               <p>
+                <i>E-mail: info@grofgerief.be</i><br>
+                <i>Tel: +32 477 282 013</i>
+               </p>
+           </div>
             <div class="footer--info--item">
-                <p>
-                    <i>Maanstraat 5</i><br>
-                    <i>2800 Mechelen</i>
-                </p>
+               <p>
+                <i>Maanstraat 5</i><br>
+                <i>2800 Mechelen</i>
+               </p>
             </div>
             <div class="footer--info--item">
                 <div class="footer--social-icon">
@@ -163,12 +180,12 @@
     <script src="public/javascript/gerief.js"></script>
     <script>
         function myFunction() {
-           var element = document.querySelector(".toggle");
-           if(element.style.display === "block"){
-            element.style.display="none";
-           } else{
-            element.style.display="block"; 
-           } 
+            var element = document.querySelector(".toggle");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
         }
     </script>
 </body>
