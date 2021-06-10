@@ -27,6 +27,73 @@
         </button> 
         
     </nav>
+    
+    <div class="nav-mobile">
+        <div class="hambi" role="navigation">
+            <div id="menuToggle">
+                <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+                <input type="checkbox" />
+
+                <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+                <ul id="menu">
+                    <a href="gerief.html">
+                        <li>Gerief</li>
+                    </a>
+                    <a href="geriefaanmelden.html">
+                        <li>Gerief aanmelden</li>
+                    </a>
+                    <a href="kalender.html">
+                        <li>Kalender</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="account.html">
+                        <li>Mijn account</li>
+                    </a>
+                    <a href="login.html" class="toggle-hover hambi-acc">
+                        <li>Inloggen</li>
+                    </a>
+                    <a href="signup.html" class="toggle-hover hambi-acc">
+                        <li>Aanmelden</li>
+                    </a>
+                    <a href="mijnfavorieten.html"><img src="/images/heartgreen.svg" alt="wit hartje" width="30px" /></a>
+                    <a href="mijnwinkelwagen.html"><img src="/images/shopping-cart.svg" alt="winkelmandje"
+                            width="30px" /></a>
+                </ul>
+            </div>
+            <div class="toggle-color">
+                <div class="toggle">
+                    <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+                    <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+                    <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="nav-mobile--logo"><img src="/images/Logo grofgerief - final wit.svg"
+                    alt="logo grofgerief" width="150px" /></a>
+        </div>
+    </div>
     <div class="toggle-color">
         <div class="toggle">
             <div class="toggle-hover"><a href="account.html">Mijn account</a></div>

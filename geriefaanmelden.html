@@ -13,12 +13,13 @@
 </head>
 
 <body>
+
     <nav>
         <a href="gerief.html">Gerief</a>
         <a href="geriefaanmelden.html">Gerief aanmelden</a>
         <a href="kalender.html">Kalender</a>
         <a href="index.html"><img src="/images/Logo grofgerief - final wit.svg" alt="logo grofgerief"
-                width="250px" /></a></li>
+                width="250px" /></a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
         <div>
@@ -27,8 +28,77 @@
             <button onclick="myFunction()" class="login-btn">
                 <img src="/images/login.svg" width="70px">
             </button>
+        </div>
 
     </nav>
+
+    <div class="nav-mobile">
+        <div class="hambi" role="navigation">
+            <div id="menuToggle">
+                <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+                <input type="checkbox" />
+
+                <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+                <ul id="menu">
+                    <a href="gerief.html">
+                        <li>Gerief</li>
+                    </a>
+                    <a href="geriefaanmelden.html">
+                        <li>Gerief aanmelden</li>
+                    </a>
+                    <a href="kalender.html">
+                        <li>Kalender</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="account.html">
+                        <li>Mijn account</li>
+                    </a>
+                    <a href="login.html" class="toggle-hover hambi-acc">
+                        <li>Inloggen</li>
+                    </a>
+                    <a href="signup.html" class="toggle-hover hambi-acc">
+                        <li>Aanmelden</li>
+                    </a>
+                    <a href="mijnfavorieten.html"><img src="/images/heartgreen.svg" alt="wit hartje" width="30px" /></a>
+                    <a href="mijnwinkelwagen.html"><img src="/images/shopping-cart.svg" alt="winkelmandje"
+                            width="30px" /></a>
+                </ul>
+            </div>
+            <div class="toggle-color">
+                <div class="toggle">
+                    <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
+                    <div class="toggle-hover"><a href="login.html">Inloggen</a></div>
+                    <div class="toggle-hover"><a href="signup.html">Aanmelden</a></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="nav-mobile--logo"><img src="/images/Logo grofgerief - final wit.svg"
+                    alt="logo grofgerief" width="150px" /></a>
+        </div>
+    </div>
+
     <div class="toggle-color">
         <div class="toggle">
             <div class="toggle-hover"><a href="account.html">Mijn account</a></div>
@@ -201,101 +271,101 @@
     <div class="geriefaanbieden">
         <h3>Maak deel uit van onze community</h3>
         <h2>Biedt hier jouw grofgerief aan!</h2>
-            <form class="geriefaanbieden-form" action="mailto:info@grofgerief.be">
-                <label for="materiaal">Soort materiaal:</label>
-                <div class="form--materiaal">
-                    <div class="materiaal">
-                        <input type="radio" id="hout" name="materiaal" value="hout">
-                        <label for="hout">Hout</label><br>
-                    </div>
-                    <div class="materiaal">
-                        <input type="radio" id="metaal" name="materiaal" value="metaal">
-                        <label for="metaal">Metaal</label><br>
-                    </div>
-                    <div class="materiaal">
-                        <input type="radio" id="kunststof" name="materiaal" value="kunststof">
-                        <label for="kunststof">Kunststof</label><br>
-                    </div>
-                    <div class="materiaal">
-                        <input type="radio" id="textiel" name="materiaal" value="textiel">
-                        <label for="textiel">Textiel</label><br>
-                    </div>
-                    <div class="materiaal">
-                        <input type="radio" id="meubilair" name="materiaal" value="meubilair">
-                        <label for="meubilair">Meubilair</label><br>
-                    </div>
-                    <div class="materiaal">
-                        <input type="radio" id="banden" name="materiaal" value="banden">
-                        <label for="banden">Banden</label>
-                    </div>
+        <form class="geriefaanbieden-form" action="mailto:info@grofgerief.be">
+            <label for="materiaal">Soort materiaal:</label>
+            <div class="form--materiaal">
+                <div class="materiaal">
+                    <input type="radio" id="hout" name="materiaal" value="hout">
+                    <label for="hout">Hout</label><br>
                 </div>
-                <label for="name">Naam</label>
-                <input type="text">
-                <label for="email">E-mail</label>
-                <input type="email">
-                <label for="telefoonnummer">Telefoonnummer</label>
-                <input type="tel">
-                <label for="message">Uitleg omtrent jouw product</label>
-                <textarea rows="4" cols="40" name="description" class="uitleg">Geef wat extra info...</textarea>
-                <div>
-                    <div class="upload-name">
-                        <p>Upload een foto van je grofgerief van <i>dichtbij</i></p>
-                        <input type="file" id="myFile" name="filename">
-                    </div>
-                    <div class="upload-name">
-                        <p>Upload een foto van je grofgerief van <i>verderaf</i></p>
-                        <input type="file" id="myFile" name="filename">
-                        </div>
-                        <div class="upload-name">
-                        <p>Upload een foto van je grofgerief langs <i>links</i></p>
-                        <input type="file" id="myFile" name="filename">
-                    </div>
-                    <div class="upload-name">
-                        <p>Upload een foto van je grofgerief langs <i>rechts</i></p>
-                        <input type="file" id="myFile" name="filename">
-                    </div>
+                <div class="materiaal">
+                    <input type="radio" id="metaal" name="materiaal" value="metaal">
+                    <label for="metaal">Metaal</label><br>
                 </div>
-                <input type="submit" value="Aanvraag indienen" class="btn">
-            </form>
-    
-    </div>
-        <footer>
-            <div class="footer--info">
-                <div class="footer--info--item">
-                    <p>
-                        <i>E-mail: info@grofgerief.be</i><br>
-                        <i>Tel: +32 477 282 013</i>
-                    </p>
+                <div class="materiaal">
+                    <input type="radio" id="kunststof" name="materiaal" value="kunststof">
+                    <label for="kunststof">Kunststof</label><br>
                 </div>
-                <div class="footer--info--item">
-                    <p>
-                        <i>Maanstraat 5</i><br>
-                        <i>2800 Mechelen</i>
-                    </p>
+                <div class="materiaal">
+                    <input type="radio" id="textiel" name="materiaal" value="textiel">
+                    <label for="textiel">Textiel</label><br>
                 </div>
-                <div class="footer--info--item">
-                    <div class="footer--social-icon">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
+                <div class="materiaal">
+                    <input type="radio" id="meubilair" name="materiaal" value="meubilair">
+                    <label for="meubilair">Meubilair</label><br>
+                </div>
+                <div class="materiaal">
+                    <input type="radio" id="banden" name="materiaal" value="banden">
+                    <label for="banden">Banden</label>
                 </div>
             </div>
-        </footer>
-        <div class="footer--logo">
-            <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
+            <label for="name">Naam</label>
+            <input type="text">
+            <label for="email">E-mail</label>
+            <input type="email">
+            <label for="telefoonnummer">Telefoonnummer</label>
+            <input type="tel">
+            <label for="message">Uitleg omtrent jouw product</label>
+            <textarea rows="4" cols="40" name="description" class="uitleg">Geef wat extra info...</textarea>
+            <div>
+                <div class="upload-name">
+                    <p>Upload een foto van je grofgerief van <i>dichtbij</i></p>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="upload-name">
+                    <p>Upload een foto van je grofgerief van <i>verderaf</i></p>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="upload-name">
+                    <p>Upload een foto van je grofgerief langs <i>links</i></p>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="upload-name">
+                    <p>Upload een foto van je grofgerief langs <i>rechts</i></p>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+            </div>
+            <input type="submit" value="Aanvraag indienen" class="btn">
+        </form>
+
+    </div>
+    <footer>
+        <div class="footer--info">
+            <div class="footer--info--item">
+                <p>
+                    <i>E-mail: info@grofgerief.be</i><br>
+                    <i>Tel: +32 477 282 013</i>
+                </p>
+            </div>
+            <div class="footer--info--item">
+                <p>
+                    <i>Maanstraat 5</i><br>
+                    <i>2800 Mechelen</i>
+                </p>
+            </div>
+            <div class="footer--info--item">
+                <div class="footer--social-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
         </div>
-        <script src="public/javascript/gerief.js"></script>
-        <script src="public\javascripts\animation.js"></script>
-        <script>
-            function myFunction() {
-                var element = document.querySelector(".toggle");
-                if (element.style.display === "block") {
-                    element.style.display = "none";
-                } else {
-                    element.style.display = "block";
-                }
+    </footer>
+    <div class="footer--logo">
+        <img src="/images/Logo grofgerief official.svg" alt="logo grofgerief" class="footer--logo--item">
+    </div>
+    <script src="public/javascript/gerief.js"></script>
+    <script src="public\javascripts\animation.js"></script>
+    <script>
+        function myFunction() {
+            var element = document.querySelector(".toggle");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
             }
-        </script>
+        }
+    </script>
 </body>
 
 </html>

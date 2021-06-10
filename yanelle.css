@@ -37,6 +37,10 @@ nav a:active{
     color: #D97652;
  }
 
+.hambi {
+    display: none;
+}
+
 
 h1 {
     font-family: futura-pt;
@@ -118,6 +122,10 @@ form {
     margin: 5% 30%;
     gap: 5px;
     color: #F5F5EF;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 /*
@@ -1061,6 +1069,181 @@ flex: 30%;
 
     }
 @media (max-width:768px) {
+
+    /*menu*/
+    .nav-mobile{
+        background-color: #3C5943;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding-top: 10%;
+    }
+
+    .nav-mobile--logo{
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+.hambi {
+    display: flex;
+    flex-direction: row;
+}
+
+ /*nav hambi*/
+
+ nav {
+    display: none;
+}
+
+ #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #3C5943;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  margin-top: 0px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #F5F5EF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #F5F5EF;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.hambi-acc {
+    background-color: #D97652;
+}
+
     /*gerief*/
     .summary--gerief {
         height: 65vh;
@@ -1188,18 +1371,186 @@ flex: 30%;
         margin: -7% 25px 10px 25px;
         text-decoration: none;
     }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 1.4em;
-        padding: 20px;
-        background-color: #3C5943;
-    }
+   
 }
 
 @media (max-width: 375px) {
+
+    .nav-mobile{
+        background-color: #3C5943;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding-top: 10%;
+    }
+
+    .nav-mobile--logo{
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+.hambi {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+display: none;
+}
+
+ /*nav hambi*/
+
+
+ #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #3C5943;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  margin-top: 0px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #F5F5EF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #F5F5EF;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.hambi-acc {
+    background-color: #D97652;
+}
+
+
     /*gerief*/
         /*gerief detail*/
   
@@ -1449,7 +1800,7 @@ flex: 30%;
     }
     /*algemeen*/
     .header {
-        padding: 30% 8% 0 8%;
+        padding: 35% 8% 20% 8%;
         display: flex;
         flex-direction: column;
         align-items: center;
